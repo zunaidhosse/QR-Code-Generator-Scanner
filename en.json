@@ -1,0 +1,134 @@
+{
+  "appTitle": "QR Code Generator & Scanner",
+  "appDescription": "Create and scan QR codes for your needs",
+  "installApp": "Install App",
+  "generatorTab": "Generator",
+  "scannerTab": "Scanner",
+  "selectDataType": "1. Select Data Type",
+  "fillInfo": "2. Fill in the Information",
+  "customizeDesign": "3. Customize the Design",
+  "generateQR": "Generate QR Code",
+  "yourQR": "Your QR Code",
+  "downloadPNG": "Download PNG",
+  "downloadSVG": "Download SVG",
+  "generatorHistory": "Generated QR History",
+  "scannerHistory": "Scanned QR History",
+  "clearHistory": "Clear History",
+  "type": {
+    "text": "Text/URL",
+    "vcard": "Contact (vCard)",
+    "wifi": "Wi-Fi",
+    "email": "Email",
+    "sms": "SMS",
+    "tel": "Phone Call",
+    "geo": "Location",
+    "event": "Calendar Event"
+  },
+  "placeholder": {
+    "textUrl": "Enter text or URL here...",
+    "vcard": {
+      "name": "Full Name",
+      "tel": "Mobile Phone",
+      "email": "Email",
+      "org": "Organization",
+      "address": "Address"
+    },
+    "wifi": {
+      "ssid": "Network Name (SSID)",
+      "password": "Password"
+    },
+    "email": {
+      "to": "Recipient's Email",
+      "subject": "Subject",
+      "body": "Message"
+    },
+    "sms": {
+      "tel": "Phone Number",
+      "body": "Message (optional)"
+    },
+    "tel": {
+      "number": "Phone Number"
+    },
+    "geo": {
+      "lat": "Latitude",
+      "lon": "Longitude"
+    },
+    "event": {
+      "summary": "Event Name",
+      "desc": "Event Description"
+    }
+  },
+  "wifi": {
+    "wpa": "WPA/WPA2",
+    "wep": "WEP",
+    "none": "None"
+  },
+  "startTime": "Start Time",
+  "endTime": "End Time",
+  "qrColor": "QR Code Color",
+  "bgColor": "Background Color",
+  "errorCorrection": "Error Correction",
+  "ecLevel": {
+    "low": "Low (L)",
+    "medium": "Medium (M)",
+    "quartile": "Quartile (Q)",
+    "high": "High (H)"
+  },
+  "regenerate": "Regenerate",
+  "scannedInfo": "Scanned Information",
+  "rescan": "Scan Again",
+  "switchCamera": "Switch Camera",
+  "toggleFlashOn": "Turn Flash On",
+  "toggleFlashOff": "Turn Flash Off",
+  "cameraPermission": {
+    "prompt": "Camera access is required. Please allow it in your browser.",
+    "allow": "Allow"
+  },
+  "cameraLoading": "Starting camera...",
+  "cameraError": {
+      "play": "Could not start the camera.",
+      "notAllowed": "You have not allowed camera usage.",
+      "notFound": "No camera found on this device.",
+      "generic": "Could not start camera. Please refresh the page."
+  },
+  "actions": {
+    "openLink": "Open Link",
+    "call": "Call",
+    "sendEmail": "Send Email",
+    "sendSMS": "Send SMS",
+    "viewOnMap": "View on Map",
+    "copy": "Copy"
+  },
+  "vcard": {
+      "prefix": "Contact Information (vCard):",
+      "wifiPrefix": "Wi-Fi Network Information:",
+      "calendarEvent": "Calendar event information found.",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "org": "Organization"
+  },
+  "toast": {
+    "fillInfo": "Please fill in the information.",
+    "copied": "Copied to clipboard!",
+    "generatorHistoryCleared": "Generator history cleared.",
+    "scannerHistoryCleared": "Scanner history cleared.",
+    "formPopulated": "Form has been populated.",
+    "flashError": "Could not control the flash.",
+    "noFlash": "Flashlight not available on this device."
+  },
+  "confirm": {
+    "clearGeneratorHistory": "Are you sure you want to delete all generator history?",
+    "clearScannerHistory": "Are you sure you want to delete all scanner history?"
+  },
+  "timeAgo": {
+    "justNow": "just now",
+    "second": "{{count}} seconds ago",
+    "minute": "{{count}} minutes ago",
+    "hour": "{{count}} hours ago",
+    "day": "{{count}} days ago",
+    "month": "{{count}} months ago",
+    "year": "{{count}} years ago"
+  }
+}
+

@@ -1,0 +1,134 @@
+{
+  "appTitle": "QR কোড জেনারেটর ও স্ক্যানার",
+  "appDescription": "আপনার প্রয়োজনীয় QR কোড তৈরি এবং স্ক্যান করুন",
+  "installApp": "অ্যাপ ইনস্টল করুন",
+  "generatorTab": "জেনারেটর",
+  "scannerTab": "স্ক্যানার",
+  "selectDataType": "১. ডেটার ধরন নির্বাচন করুন",
+  "fillInfo": "২. তথ্য পূরণ করুন",
+  "customizeDesign": "৩. ডিজাইন কাস্টমাইজ করুন",
+  "generateQR": "QR কোড তৈরি করুন",
+  "yourQR": "আপনার QR কোড",
+  "downloadPNG": "PNG ডাউনলোড",
+  "downloadSVG": "SVG ডাউনলোড",
+  "generatorHistory": "তৈরি করা QR কোডের ইতিহাস",
+  "scannerHistory": "স্ক্যান করা QR কোডের ইতিহাস",
+  "clearHistory": "ইতিহাস মুছুন",
+  "type": {
+    "text": "টেক্সট/URL",
+    "vcard": "যোগাযোগ (vCard)",
+    "wifi": "ওয়াইফাই",
+    "email": "ইমেল",
+    "sms": "এসএমএস",
+    "tel": "ফোন কল",
+    "geo": "অবস্থান",
+    "event": "ক্যালেন্ডার ইভেন্ট"
+  },
+  "placeholder": {
+    "textUrl": "এখানে টেক্সট বা URL লিখুন...",
+    "vcard": {
+      "name": "পুরো নাম",
+      "tel": "মোবাইল ফোন",
+      "email": "ইমেল",
+      "org": "প্রতিষ্ঠান",
+      "address": "ঠিকানা"
+    },
+    "wifi": {
+      "ssid": "নেটওয়ার্কের নাম (SSID)",
+      "password": "পাসওয়ার্ড"
+    },
+    "email": {
+      "to": "প্রাপকের ইমেল",
+      "subject": "বিষয়",
+      "body": "বার্তা"
+    },
+    "sms": {
+      "tel": "ফোন নম্বর",
+      "body": "বার্তা (ঐচ্ছিক)"
+    },
+    "tel": {
+      "number": "ফোন নম্বর"
+    },
+    "geo": {
+      "lat": "অক্ষাংশ (Latitude)",
+      "lon": "দ্রাঘিমাংশ (Longitude)"
+    },
+    "event": {
+      "summary": "ইভেন্টের নাম",
+      "desc": "ইভেন্টের বিবরণ"
+    }
+  },
+  "wifi": {
+    "wpa": "WPA/WPA2",
+    "wep": "WEP",
+    "none": "None"
+  },
+  "startTime": "শুরুর সময়",
+  "endTime": "শেষের সময়",
+  "qrColor": "QR কোডের রঙ",
+  "bgColor": "পটভূমির রঙ",
+  "errorCorrection": "ত্রুটি সংশোধন",
+  "ecLevel": {
+    "low": "Low (L)",
+    "medium": "Medium (M)",
+    "quartile": "Quartile (Q)",
+    "high": "High (H)"
+  },
+  "regenerate": "পুনরায় তৈরি",
+  "scannedInfo": "স্ক্যান করা তথ্য",
+  "rescan": "আবার স্ক্যান করুন",
+  "switchCamera": "ক্যামেরা পরিবর্তন",
+  "toggleFlashOn": "ফ্ল্যাশ চালু",
+  "toggleFlashOff": "ফ্ল্যাশ বন্ধ",
+  "cameraPermission": {
+    "prompt": "ক্যামেরা অ্যাক্সেস প্রয়োজন। অনুগ্রহ করে আপনার ব্রাউজারে অনুমতি দিন।",
+    "allow": "অনুমতি দিন"
+  },
+  "cameraLoading": "ক্যামেরা চালু হচ্ছে...",
+  "cameraError": {
+      "play": "ক্যামেরা চালু করা যায়নি।",
+      "notAllowed": "আপনি ক্যামেরা ব্যবহারের অনুমতি দেননি।",
+      "notFound": "কোনো ক্যামেরা খুঁজে পাওয়া যায়নি।",
+      "generic": "ক্যামেরা চালু করা যায়নি। অনুগ্রহ করে পৃষ্ঠাটি রিফ্রেশ করুন।"
+  },
+  "actions": {
+    "openLink": "লিঙ্ক খুলুন",
+    "call": "কল করুন",
+    "sendEmail": "ইমেল পাঠান",
+    "sendSMS": "এসএমএস পাঠান",
+    "viewOnMap": "ম্যাপে দেখুন",
+    "copy": "কপি করুন"
+  },
+  "vcard": {
+      "prefix": "যোগাযোগের তথ্য (vCard):",
+      "wifiPrefix": "ওয়াইফাই নেটওয়ার্ক তথ্য:",
+      "calendarEvent": "ক্যালেন্ডার ইভেন্টের তথ্য পাওয়া গেছে।",
+      "name": "নাম",
+      "phone": "ফোন",
+      "email": "ইমেল",
+      "org": "প্রতিষ্ঠান"
+  },
+  "toast": {
+    "fillInfo": "অনুগ্রহ করে তথ্য পূরণ করুন।",
+    "copied": "কপি করা হয়েছে!",
+    "generatorHistoryCleared": "তৈরি করা ইতিহাস মুছে ফেলা হয়েছে।",
+    "scannerHistoryCleared": "স্ক্যান করা ইতিহাস মুছে ফেলা হয়েছে।",
+    "formPopulated": "ফর্মটি পূরণ করা হয়েছে।",
+    "flashError": "ফ্ল্যাশ নিয়ন্ত্রণ করা সম্ভব হচ্ছে না।",
+    "noFlash": "এই ডিভাইসে ফ্ল্যাশলাইট নেই।"
+  },
+  "confirm": {
+    "clearGeneratorHistory": "আপনি কি তৈরি করা সমস্ত ইতিহাস মুছে ফেলতে চান?",
+    "clearScannerHistory": "আপনি কি স্ক্যান করা সমস্ত ইতিহাস মুছে ফেলতে চান?"
+  },
+  "timeAgo": {
+    "justNow": "এইমাত্র",
+    "second": "{{count}} সেকেন্ড আগে",
+    "minute": "{{count}} মিনিট আগে",
+    "hour": "{{count}} ঘন্টা আগে",
+    "day": "{{count}} দিন আগে",
+    "month": "{{count}} মাস আগে",
+    "year": "{{count}} বছর আগে"
+  }
+}
+

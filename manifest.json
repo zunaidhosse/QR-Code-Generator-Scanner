@@ -1,0 +1,22 @@
+{
+  "name": "QR কোড জেনারেটর ও স্ক্যানার",
+  "short_name": "QR App",
+  "description": "আপনার প্রয়োজনীয় QR কোড তৈরি এবং স্ক্যান করুন",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
+

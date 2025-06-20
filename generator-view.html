@@ -1,0 +1,130 @@
+<div class="glass-card p-6 rounded-2xl">
+    <h2 class="text-xl font-semibold mb-4 text-white" data-lang="selectDataType">১. ডেটার ধরন নির্বাচন করুন</h2>
+    <div id="qr-type-selector" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 text-sm">
+        <label class="flex items-center space-x-2 p-3 glass-input rounded-lg cursor-pointer hover:bg-white/20 has-[:checked]:glass-input-active has-[:checked]:text-white transition-all duration-200">
+            <input type="radio" name="qrType" value="text" class="hidden" checked> <span data-lang="type.text">টেক্সট/URL</span>
+        </label>
+         <label class="flex items-center space-x-2 p-3 glass-input rounded-lg cursor-pointer hover:bg-white/20 has-[:checked]:glass-input-active has-[:checked]:text-white transition-all duration-200">
+            <input type="radio" name="qrType" value="vcard" class="hidden"> <span data-lang="type.vcard">যোগাযোগ (vCard)</span>
+        </label>
+        <label class="flex items-center space-x-2 p-3 glass-input rounded-lg cursor-pointer hover:bg-white/20 has-[:checked]:glass-input-active has-[:checked]:text-white transition-all duration-200">
+            <input type="radio" name="qrType" value="wifi" class="hidden"> <span data-lang="type.wifi">ওয়াইফাই</span>
+        </label>
+        <label class="flex items-center space-x-2 p-3 glass-input rounded-lg cursor-pointer hover:bg-white/20 has-[:checked]:glass-input-active has-[:checked]:text-white transition-all duration-200">
+            <input type="radio" name="qrType" value="email" class="hidden"> <span data-lang="type.email">ইমেল</span>
+        </label>
+         <label class="flex items-center space-x-2 p-3 glass-input rounded-lg cursor-pointer hover:bg-white/20 has-[:checked]:glass-input-active has-[:checked]:text-white transition-all duration-200">
+            <input type="radio" name="qrType" value="sms" class="hidden"> <span data-lang="type.sms">এসএমএস</span>
+        </label>
+        <label class="flex items-center space-x-2 p-3 glass-input rounded-lg cursor-pointer hover:bg-white/20 has-[:checked]:glass-input-active has-[:checked]:text-white transition-all duration-200">
+            <input type="radio" name="qrType" value="tel" class="hidden"> <span data-lang="type.tel">ফোন কল</span>
+        </label>
+        <label class="flex items-center space-x-2 p-3 glass-input rounded-lg cursor-pointer hover:bg-white/20 has-[:checked]:glass-input-active has-[:checked]:text-white transition-all duration-200">
+            <input type="radio" name="qrType" value="geo" class="hidden"> <span data-lang="type.geo">অবস্থান</span>
+        </label>
+        <label class="flex items-center space-x-2 p-3 glass-input rounded-lg cursor-pointer hover:bg-white/20 has-[:checked]:glass-input-active has-[:checked]:text-white transition-all duration-200">
+            <input type="radio" name="qrType" value="event" class="hidden"> <span data-lang="type.event">ক্যালেন্ডার ইভেন্ট</span>
+        </label>
+    </div>
+</div>
+
+<div class="glass-card p-6 rounded-2xl">
+     <h2 class="text-xl font-semibold mb-4 text-white" data-lang="fillInfo">২. তথ্য পূরণ করুন</h2>
+    <!-- Text/URL Form -->
+    <div id="form-text" class="form-section active space-y-4">
+        <textarea id="text-input" class="w-full p-3 glass-input rounded-md transition" data-lang-placeholder="placeholder.textUrl" placeholder="এখানে টেক্সট বা URL লিখুন..."></textarea>
+    </div>
+    <!-- vCard Form -->
+    <div id="form-vcard" class="form-section space-y-4">
+        <input type="text" id="vcard-name" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.vcard.name" placeholder="পুরো নাম">
+        <input type="tel" id="vcard-tel" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.vcard.tel" placeholder="মোবাইল ফোন">
+        <input type="email" id="vcard-email" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.vcard.email" placeholder="ইমেল">
+        <input type="text" id="vcard-org" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.vcard.org" placeholder="প্রতিষ্ঠান">
+        <textarea id="vcard-address" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.vcard.address" placeholder="ঠিকানা"></textarea>
+    </div>
+    <!-- WiFi Form -->
+    <div id="form-wifi" class="form-section space-y-4">
+        <input type="text" id="wifi-ssid" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.wifi.ssid" placeholder="নেটওয়ার্কের নাম (SSID)">
+        <input type="password" id="wifi-password" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.wifi.password" placeholder="পাসওয়ার্ড">
+        <select id="wifi-encryption" class="w-full p-3 glass-input rounded-md">
+            <option value="WPA" data-lang="wifi.wpa">WPA/WPA2</option>
+            <option value="WEP" data-lang="wifi.wep">WEP</option>
+            <option value="nopass" data-lang="wifi.none">None</option>
+        </select>
+    </div>
+    <!-- Email Form -->
+    <div id="form-email" class="form-section space-y-4">
+        <input type="email" id="email-to" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.email.to" placeholder="প্রাপকের ইমেল">
+        <input type="text" id="email-subject" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.email.subject" placeholder="বিষয়">
+        <textarea id="email-body" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.email.body" placeholder="বার্তা"></textarea>
+    </div>
+    <!-- SMS Form -->
+    <div id="form-sms" class="form-section space-y-4">
+        <input type="tel" id="sms-tel" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.sms.tel" placeholder="ফোন নম্বর">
+        <textarea id="sms-body" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.sms.body" placeholder="বার্তা (ঐচ্ছিক)"></textarea>
+    </div>
+    <!-- Phone Call Form -->
+    <div id="form-tel" class="form-section space-y-4">
+        <input type="tel" id="tel-number" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.tel.number" placeholder="ফোন নম্বর">
+    </div>
+     <!-- Geo Form -->
+    <div id="form-geo" class="form-section space-y-4">
+        <input type="text" id="geo-lat" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.geo.lat" placeholder="অক্ষাংশ (Latitude)">
+        <input type="text" id="geo-lon" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.geo.lon" placeholder="দ্রাঘিমাংশ (Longitude)">
+    </div>
+    <!-- Event Form -->
+    <div id="form-event" class="form-section space-y-4">
+        <input type="text" id="event-summary" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.event.summary" placeholder="ইভেন্টের নাম">
+        <div>
+            <label class="block text-sm font-medium text-gray-300 mb-1" data-lang="startTime">শুরুর সময়</label>
+            <input type="datetime-local" id="event-start" class="w-full p-3 glass-input rounded-md text-gray-300">
+        </div>
+         <div>
+            <label class="block text-sm font-medium text-gray-300 mb-1" data-lang="endTime">শেষের সময়</label>
+            <input type="datetime-local" id="event-end" class="w-full p-3 glass-input rounded-md text-gray-300">
+        </div>
+        <textarea id="event-desc" class="w-full p-3 glass-input rounded-md" data-lang-placeholder="placeholder.event.desc" placeholder="ইভেন্টের বিবরণ"></textarea>
+    </div>
+</div>
+
+<div class="glass-card p-6 rounded-2xl">
+    <h2 class="text-xl font-semibold mb-4 text-white" data-lang="customizeDesign">৩. ডিজাইন কাস্টমাইজ করুন</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+            <label for="fg-color" class="block text-sm font-medium text-gray-300 mb-1" data-lang="qrColor">QR কোডের রঙ</label>
+            <input type="color" id="fg-color" value="#FFFFFF" class="w-full h-10 p-1 glass-input rounded-md cursor-pointer">
+        </div>
+        <div>
+            <label for="bg-color" class="block text-sm font-medium text-gray-300 mb-1" data-lang="bgColor">পটভূমির রঙ</label>
+            <input type="color" id="bg-color" value="#00000000" class="w-full h-10 p-1 glass-input rounded-md cursor-pointer">
+        </div>
+        <div>
+            <label for="error-correction" class="block text-sm font-medium text-gray-300 mb-1" data-lang="errorCorrection">ত্রুটি সংশোধন</label>
+            <select id="error-correction" class="w-full p-2 glass-input rounded-md">
+                <option value="L" data-lang="ecLevel.low">Low (L)</option>
+                <option value="M" selected data-lang="ecLevel.medium">Medium (M)</option>
+                <option value="Q" data-lang="ecLevel.quartile">Quartile (Q)</option>
+                <option value="H" data-lang="ecLevel.high">High (H)</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<button id="generate-btn" class="w-full bg-indigo-600/50 text-white font-bold py-4 rounded-lg hover:bg-indigo-600/80 transition-all duration-300 text-lg shadow-lg border border-indigo-400/50 backdrop-blur-sm" data-lang="generateQR">QR কোড তৈরি করুন</button>
+
+<div id="qr-result" class="glass-card p-6 rounded-2xl text-center hidden">
+    <h2 class="text-xl font-semibold mb-4 text-white" data-lang="yourQR">আপনার QR কোড</h2>
+    <div id="qrcode" class="mx-auto bg-white/90 p-4 rounded-lg inline-block"></div>
+    <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4">
+        <a id="download-png-btn" class="glass-button bg-emerald-600/50 border-emerald-400/50 hover:bg-emerald-500/80 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300" data-lang="downloadPNG">PNG ডাউনলোড</a>
+        <a id="download-svg-btn" class="glass-button bg-sky-600/50 border-sky-400/50 hover:bg-sky-500/80 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300" data-lang="downloadSVG">SVG ডাউনলোড</a>
+    </div>
+</div>
+
+<div id="generator-history-container" class="glass-card p-6 rounded-2xl hidden">
+    <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold text-white" data-lang="generatorHistory">তৈরি করা QR কোডের ইতিহাস</h2>
+        <button id="clear-generator-history-btn" class="glass-button bg-red-600/50 border-red-400/50 hover:bg-red-500/80 text-white text-sm font-semibold py-1 px-3 rounded-md flex-shrink-0" data-lang="clearHistory">ইতিহাস মুছুন</button>
+    </div>
+    <ul id="generator-history-list" class="space-y-2"></ul>
+</div>

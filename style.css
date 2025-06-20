@@ -1,0 +1,165 @@
+body { font-family: 'Inter', sans-serif; }
+
+.bg-liquid {
+    background-color: #111827;
+    background-image: url('./liquid-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-grid {
+    background-image: url('./bg-pattern.png');
+    background-repeat: repeat;
+}
+
+.glass-card {
+    background-color: rgba(31, 41, 55, 0.5); /* gray-800 with 50% opacity */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 1rem; /* rounded-2xl */
+}
+
+.glass-input {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background-color 0.3s, border-color 0.3s;
+    color: #e5e7eb; /* gray-200 */
+}
+.glass-input:focus, .glass-input:focus-within {
+     background-color: rgba(255, 255, 255, 0.1);
+     border-color: #818cf8; /* indigo-400 */
+}
+.glass-input::placeholder {
+    color: #9ca3af; /* gray-400 */
+}
+.glass-input-active {
+    background-color: rgba(79, 70, 229, 0.5); /* indigo-600/50 */
+    border-color: rgba(129, 140, 248, 0.6); /* indigo-400/60 */
+}
+
+.glass-button {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid;
+}
+.glass-button.bg-yellow-500 {
+    background-color: rgba(234, 179, 8, 0.5) !important;
+    border-color: rgba(252, 211, 77, 0.5) !important;
+}
+.glass-button.bg-yellow-500:hover {
+     background-color: rgba(234, 179, 8, 0.7) !important;
+}
+
+#language-switcher .lang-button {
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+#language-switcher .lang-button.lang-active {
+    background-color: rgba(79, 70, 229, 0.5); /* indigo-600/50 */
+    border-color: rgba(129, 140, 248, 0.6); /* indigo-400/60 */
+}
+
+.tab-active {
+    background-color: rgba(79, 70, 229, 0.6); /* indigo-600 */
+    color: white;
+    border: 1px solid rgba(129, 140, 248, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.tab-inactive {
+    background-color: transparent;
+    color: #d1d5db; /* gray-300 */
+    border: 1px solid transparent;
+}
+.tab-inactive:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-section {
+    display: none;
+}
+.form-section.active {
+    display: block;
+}
+.toast {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: rgba(16, 185, 129, 0.7); /* emerald-500 with opacity */
+    color: white;
+    z-index: 1000;
+    transition: bottom 0.5s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.toast.show {
+    bottom: 20px;
+}
+#scanner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.875rem; /* slightly less than parent to avoid peeking */
+}
+
+#scanner-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ef4444; /* red-500 */
+    box-shadow: 0 0 10px #ef4444, 0 0 20px #ef4444;
+    border-radius: 9999px;
+    display: none; /* Hidden by default, shown by JS */
+    animation: scan-anim 3s ease-in-out infinite;
+}
+
+#scanner-overlay > .cutout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.6);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    overflow: hidden; /* This is key to contain the line */
+}
+
+@keyframes scan-anim {
+    0% {
+        top: 0%;
+        opacity: 0.8;
+    }
+    50% {
+        top: 100%;
+        opacity: 1;
+    }
+    100% {
+        top: 0%;
+        opacity: 0.8;
+    }
+}
+
+/* Add a style for the date/time input placeholder text color */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.8);
+}
+
+/* Remove default tailwind focus rings as we handle them with glass-input:focus */
+input:focus, textarea:focus, select:focus {
+    box-shadow: none;
+    --tw-ring-shadow: none;
+    outline: none;
+}
